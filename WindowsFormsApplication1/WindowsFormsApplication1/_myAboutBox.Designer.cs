@@ -86,7 +86,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(271, 17);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "MyFirstWindowsFormApplication";
+            this.labelProductName.Text = "Моё первое приложения WindowsForms";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelVersion
@@ -98,7 +98,7 @@
             this.labelVersion.Name = "labelVersion";
             this.labelVersion.Size = new System.Drawing.Size(271, 17);
             this.labelVersion.TabIndex = 0;
-            this.labelVersion.Text = "Версия - 1.0.0.0";
+            this.labelVersion.Text = "Текущая Версия - 1.0.0.7";
             this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -136,7 +136,7 @@
             this.textBoxDescription.Size = new System.Drawing.Size(271, 126);
             this.textBoxDescription.TabIndex = 23;
             this.textBoxDescription.TabStop = false;
-            this.textBoxDescription.Text = "Данная программа создана для ознакомления мною с WindowsForms.\r\n";
+            this.textBoxDescription.Text = resources.GetString("textBoxDescription.Text");
             // 
             // okButton
             // 
@@ -147,6 +147,7 @@
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 24;
             this.okButton.Text = "&ОК";
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // _myAboutBox
             // 
